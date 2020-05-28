@@ -1,0 +1,80 @@
+body {
+    background-color:black;
+    background-image: url(backgrounds/green-hill.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    margin: 5%;
+}
+
+.icon-container {
+    display: grid;
+    column-gap: 0px;
+    row-gap: 40px;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+
+    background-color:rgba(0,0,0,0.5);
+    padding: 30px;
+}
+.icon {
+    text-align: center;
+}
+.icon p {
+    color: white;
+    font: 10pt verdana;
+    padding: 0;
+    margin: 0;
+}
+.player {
+    width: 150px;
+    height: 250px;
+    border: 2px solid rgba(70, 84, 90, 0.8);
+}
+.background {
+    width:  150px;
+    height: 150px;
+    border: 2px solid rgba(70, 84, 90, 0.8);
+}
+.sonic {
+    background-color:rgba(27, 155, 214, 0.8);
+}
+.tails {
+    background-color:rgba(230, 161, 34, 0.8);
+}
+.knuckles {
+    background-color:rgba(218, 72, 72, 0.8);
+}
+.amy {
+    background-color:rgba(240, 59, 119, 0.8);
+}
+.shadow {
+    background-color:rgba(95, 94, 93, 0.8);
+}
+.robotnik {
+    background-color:rgba(125, 235, 103, 0.8);
+}
+
+input[type=image]:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

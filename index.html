@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css?doti=1">
+        <script type="text/javascript" src="scripts.js?1"></script>
+        <link rel="shortcut icon" href="sonic.ico">
+    </head>
+    <body>
+        <div class="icon-container">
+            <div class="icon">
+                <input type="image" src="icons/sonic.png" class="player sonic"
+                    onclick="PlaySound('sonic', 392);" alt="SONIC">
+            </div>
+            <div class="icon">
+                <input type="image" src="icons/tails.png" class="player tails" 
+                    onclick="PlaySound('tails', 374);" alt="TAILS">
+            </div>
+            <div class="icon">
+                <input type="image" src="icons/knuckles.png" class="player knuckles" 
+                    onclick="PlaySound('knuckles', 57);" alt="KNUCKLES">
+            </div>
+            <div class="icon">
+                <input type="image" src="icons/amy.png" class="player amy" 
+                    onclick="PlaySound('amy', 58);" alt="AMY">
+            </div>
+            <div class="icon">
+                <input type="image" src="icons/shadow.png" class="player shadow" 
+                    onclick="PlaySound('shadow', 44);" alt="SHADOW">
+            </div>
+            <div class="icon">
+                <input type="image" src="icons/robotnik.png" class="player robotnik" 
+                    onclick="PlaySound('robotnik', 26);" alt="ROBOTONIK">
+            </div>
+
+            <div class="icon">
+                <input type="image" src="backgrounds/green-hill.png" class="background" 
+                    onclick="ChangeZone('green-hill.png', 'greenHillZone');">
+                <p>green hill zone</p>
+            </div>
+
+            <div class="icon">
+                <input type="image" src="backgrounds/chemical-plant.jpg" class="background" 
+                    onclick="ChangeZone('chemical-plant.jpg', 'chemicalPlantZone');">
+                <p>chemical plant zone</p>
+            </div>
+
+            <div class="icon">
+                <input type="image" src="backgrounds/studiopolis.png" class="background" 
+                    onclick="ChangeZone('studiopolis.png', 'studiopolisZone');">
+                <p>studiopolis zone</p>
+            </div>
+
+            <div class="icon">
+                <input type="image" src="backgrounds/oil-ocean.jpg" class="background" 
+                    onclick="ChangeZone('oil-ocean.jpg', 'oilOceanZone');">
+                <p>oil ocean zone</p>
+            </div>
+
+            <div class="icon">
+                <input type="image" src="backgrounds/angel-island.png" class="background" 
+                    onclick="ChangeZone('angel-island.png', 'angelIslandZone');">
+                <p>angel island zone</p>
+            </div>
+
+            <div class="icon">
+                <input type="image" src="backgrounds/lava-reef.jpg" class="background" 
+                    onclick="ChangeZone('lava-reef.jpg', 'lavaReefZone');">
+                <p>lava reef zone</p>
+            </div>
+        </icon-container>
+
+        <audio autoplay loop src="music/green-hill.mp3" id="greenHillZone"></audio>
+        <audio autoplay loop src="music/chemical-plant.mp3" id="chemicalPlantZone"></audio>
+        <audio autoplay loop src="music/studiopolis.mp3" id="studiopolisZone"></audio>
+        <audio autoplay loop src="music/oil-ocean.mp3" id="oilOceanZone"></audio>
+        <audio autoplay loop src="music/angel-island.mp3" id="angelIslandZone"></audio>
+        <audio autoplay loop src="music/lava-reef.mp3" id="lavaReefZone"></audio>
+    </body>
+</html>
